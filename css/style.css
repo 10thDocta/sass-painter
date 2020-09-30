@@ -1,40 +1,203 @@
+header .top-menu ul.menu-list li, header .header-nav ul.nav-list li, header .hero .hero-container .hero-info a.btn-grey, header .hero .hero-container .hero-box .top .left,
+header .hero .hero-container .hero-box .top .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .top-menu ul.menu-list, header .header-nav ul.nav-list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header .top-menu ul.menu-list li, header .header-nav ul.nav-list li {
+  height: 100%;
+}
+
+header .top-menu ul.menu-list li a, header .header-nav ul.nav-list li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: black;
+  /* TOP MENU */
+  /* NAV */
+  /* HERO */
+}
+
+header a {
+  text-decoration: none;
+}
+
+header .top-menu {
+  height: 40px;
+}
+
+header .top-menu ul.menu-list {
+  color: lightgrey;
+  justify-content: flex-end;
+}
+
+header .top-menu ul.menu-list li {
+  margin: 0 10px;
+}
+
+header .header-nav {
+  height: 55px;
+  padding-right: 70px;
+}
+
+header .header-nav ul.nav-list {
+  justify-content: space-between;
+  color: whitesmoke;
+}
+
+header .header-nav ul.nav-list li {
+  width: calc(100% / 9);
+}
+
+header .header-nav ul.nav-list li.logo {
+  padding-right: 10px;
+}
+
+header .header-nav ul.nav-list li:not(:first-child):hover {
+  color: black;
+  background-color: whitesmoke;
+}
+
+header .header-nav ul.nav-list li i {
+  margin-left: 5px;
+}
+
+header .hero {
+  height: 470px;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+header .hero .container {
+  height: 100%;
+}
+
+header .hero .hero-container {
+  height: 100%;
+  width: 80%;
+  margin-left: auto;
+  display: flex;
+}
+
+header .hero .hero-container .hero-info,
+header .hero .hero-container .hero-box {
+  width: 50%;
+  height: 100%;
+}
+
+header .hero .hero-container .hero-info {
+  color: whitesmoke;
+}
+
+header .hero .hero-container .hero-info h3,
+header .hero .hero-container .hero-info h5 {
+  font-weight: 500;
+}
+
+header .hero .hero-container .hero-info h3 {
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+header .hero .hero-container .hero-info h5 {
+  margin-top: 25px;
+  font-size: 22px;
+}
+
+header .hero .hero-container .hero-info ul.hero-info__list {
+  margin-top: 25px;
+  list-style: none;
+  color: whitesmoke;
+}
+
+header .hero .hero-container .hero-info ul.hero-info__list li {
+  margin-top: 12px;
+}
+
+header .hero .hero-container .hero-info ul.hero-info__list li i {
+  color: #646363;
+}
+
+header .hero .hero-container .hero-info a.btn-grey {
+  margin-top: 50px;
+  width: 200px;
+  height: 60px;
+  color: whitesmoke;
+  background-color: #646363;
+  text-decoration: none;
+}
+
+header .hero .hero-container .hero-info a.btn-grey div {
+  padding: 0 8px 0 10px;
+  border-right: 1px solid white;
+}
+
+header .hero .hero-container .hero-info a.btn-grey i {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+header .hero .hero-container .hero-box {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header .hero .hero-container .hero-box .top {
+  display: flex;
+  justify-content: space-around;
+  color: whitesmoke;
+}
+
+header .hero .hero-container .hero-box .top .left,
+header .hero .hero-container .hero-box .top .right {
+  width: 50%;
+  padding: 0 20px;
+}
+
+header .hero .hero-container .hero-box .top .left {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+header .hero .hero-container .hero-box .top .left a.btn-blue {
+  padding: 10px 15px;
+  width: 150px;
+  color: white;
+  background-color: #28acff;
+  text-align: center;
+}
+
+header .hero .hero-container .hero-box .top .right {
+  justify-content: flex-end;
+}
+
+header .hero .hero-container .hero-box .offer {
+  margin: auto;
+  padding: 10px;
+  width: 90%;
+  background-color: lightgrey;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header {
-  background-color: black;
-}
-
-header .header-nav {
-  height: 100px;
-}
-
-header .header-nav .nav-list {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  color: white;
-}
-
-header .header-nav .nav-list a {
-  text-decoration: none;
-  color: white;
-}
-
-header .hero {
-  height: 500px;
-  background-image: url("../img/hero.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .container {
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

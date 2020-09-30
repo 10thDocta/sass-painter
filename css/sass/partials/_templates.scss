@@ -1,0 +1,22 @@
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%ul-template {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  li {
+    height: 100%;
+    @extend %flex-center;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
