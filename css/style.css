@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+}
+
+header .header-nav {
+  height: 100px;
+}
+
+header .header-nav .nav-list {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+
+header .header-nav .nav-list a {
+  text-decoration: none;
+  color: white;
+}
+
+header .hero {
+  height: 500px;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
