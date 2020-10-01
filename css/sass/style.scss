@@ -1,14 +1,12 @@
-@import "partials/templates";
+// Font
+
+// Setup
+// i vari commond, mixin, variable
 @import "partials/color";
+@import "partials/common";
+@import "partials/mixin";
+@import "partials/templates";
+
+// Sezioni
+// i vari partial delle sezioni
 @import "partials/header", "partials/main", "partials/footer";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  width: 65%;
-  margin: 0 auto;
-}

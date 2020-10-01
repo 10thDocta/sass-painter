@@ -6,10 +6,6 @@ $margin-top: 25px;
 header {
   background-color: rgb(0, 0, 0);
 
-  a {
-    text-decoration: none;
-  }
-
   /* TOP MENU */
   .top-menu {
     height: $topMenuHeight;
@@ -60,7 +56,7 @@ header {
     background-image: url("../img/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position: center;
 
     .container {
       height: 100%;
@@ -71,6 +67,7 @@ header {
       width: 80%;
       margin-left: auto;
       display: flex;
+      justify-content: flex-end;
 
       .hero-info,
       .hero-box {
@@ -114,7 +111,7 @@ header {
           margin-top: 50px;
           width: 200px;
           height: 60px;
-          @extend %flex-center;
+          @include flex-center;
           color: $headerPrimaryColor;
           background-color: rgb(100, 99, 99);
           text-decoration: none;
@@ -133,6 +130,10 @@ header {
       }
 
       .hero-box {
+        $hero-box-margin: 20px;
+        margin-top: $hero-box-margin;
+        width: 40%;
+        height: calc(100% - #{$hero-box-margin});
         background-color: rgba($color: #000000, $alpha: 0.7);
 
         .top {
@@ -142,7 +143,7 @@ header {
 
           .left,
           .right {
-            @extend %flex-center;
+            @include flex-center;
             width: 50%;
             padding: 0 20px;
           }

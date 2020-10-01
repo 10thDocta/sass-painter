@@ -1,0 +1,21 @@
+// nel _common ci metto tutti i tag generici, come .container, h2,h3 etc...
+// il top sarebbe creare partial ache per il font
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.container-section {
+  width: 55%;
+  margin: 0 auto;
+}

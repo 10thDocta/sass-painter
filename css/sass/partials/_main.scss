@@ -1,0 +1,62 @@
+.section {
+  text-align: center;
+
+  h2 {
+    padding-top: 100px;
+    font-size: 36px;
+  }
+
+  p {
+    padding-top: 30px;
+    font-size: 20px;
+  }
+
+  .img-container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-1 {
+    background-image: url("../img/section-1.jpg");
+    @include bg-image;
+    color: $headerPrimaryColor;
+
+    img {
+      &:first-child {
+        position: relative;
+        z-index: 1;
+      }
+
+      &:last-child {
+        position: absolute;
+        width: 97%;
+        left: 0;
+        bottom: 4px;
+      }
+    }
+  }
+
+  &-3 {
+    background-color: #222222;
+    color: $headerPrimaryColor;
+
+    img {
+      max-width: 700px;
+    }
+  }
+}
+
+.parallax {
+  height: 500px;
+
+  &-1 {
+    background-image: url("../img/parallax-1.jpg");
+    background-attachment: fixed;
+  }
+}
